@@ -1,6 +1,5 @@
 import {
     backend,
-    creator,
     web,
     javascript,
     typescript,
@@ -11,10 +10,7 @@ import {
     nodejs,
     mongodb,
     git,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    Aftercodelogo,
     carrent,
     jobit,
     tripguide,
@@ -38,7 +34,7 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Frontend Developer",
       icon: web,
     },
     
@@ -97,57 +93,30 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Alone",
-      icon: starbucks,
+      title: "Next.js Developer",
+      company_name: "Aftercode",
+      icon: Aftercodelogo,
       iconBg: "#383E56",
-      date: "March 2022 - April 2023",
+      date: "July 2024 - August 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing interactive front-end components with React.js and Next.js.",
+        "Integrating modern interfaces with Tailwind CSS and Shadcn UI.",
+        "Enhancing the user experience with smooth animations using Framer Motion",
       ],
-    },
-    {
-      title: "front Developer",
-      company_name: "Alone",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Jan 2024",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+    }, {
+      title: "Fullstack Developer",
+      company_name: "Aftercode",
+      icon: Aftercodelogo,
       iconBg: "#383E56",
-      date: "Jan 2023 - Jan 2024",
+      date: "April 2025 - May 2025",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing B2B/B2C application for animal services.",
+        "Integrating modern interfaces with Tailwind CSS and Shadcn UI.",
+        "Enhancing the user experience with smooth animations using Framer Motion",
+        "Converting Figma prototypes into functional, pixel-perfect, and responsive pages."
       ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Alone",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    }
+    
   ];
   
   
