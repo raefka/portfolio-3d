@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logoo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -27,6 +27,11 @@ import Aftercodelogo from "./company/Aftercodelogo.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import takwirti from "./takwirti.png";
+import animatch from "./animatch.png";
+import anihub from "./anihub.png";
+
+
 
 export {
   logo,
@@ -54,4 +59,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  takwirti,
+  animatch,
+  anihub
 };

@@ -15,6 +15,10 @@ import {
     jobit,
     tripguide,
     threejs,
+    anihub,
+    animatch,
+    takwirti
+
   } from "../assets";
   
   export const navLinks = [
@@ -123,25 +127,45 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Anihub",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web application for adopting pets, marketplace for pet products, and a community platform for pet owners.",
       tags: [
         {
-          name: "react",
+          name: "nextjs",
           color: "blue-text-gradient",
         },
         {
-          name: "Nextjs",
+          name: "postegreSql",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "tailwind css",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/raefka/car-showcase",
+      image: anihub,
+      source_code_link: "",
+    },{
+      name: "Takwirti",
+      description:
+        "web application for managing football reservation stadiums by players and stadium owners.",
+      tags: [
+        {
+          name: "reactjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: takwirti,
+      source_code_link: "https://github.com/Zouaoui-Montassar/Takwirti",
     },
     {
       name: "Travel page",
@@ -184,6 +208,26 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/raefka/event-app",
+    },{
+      name: "Animatch",
+      description:
+        "Web application for matching pets with potential adopters based on preferences and location.",
+      tags: [
+        {
+          name: "nextjs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "neondb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: animatch,
+      source_code_link: "",
     },
   ];
   
