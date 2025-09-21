@@ -1,105 +1,53 @@
-import {useState , useRef} from 'react';
-import {motion} from 'framer-motion';
-import emailjs from'@emailjs/browser';
+import { motion } from "framer-motion";
+import { Github, Linkedin, Mail } from "lucide-react";
 
-import {styles} from '../styles';
-import { EarthCanvas } from './canvas';
-import { SectionWrapper } from '../hoc';
-import { slideIn } from '../utils/motion';
-
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef();
-   const [form,setForm] = useState({
-    name:'',
-    emial:'',
-    message:'',
-   });
-
-   const [loading, setLoading] = useState(false);
-
-   const handleChange =(e) =>{
-
-   } ;
-
-   const handleSubmit =(e) =>{
-
-   }
-
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
-        variants={slideIn('left',"tween" ,0.2,1)}
-        className='flex-[0.75px] bg-black-100 p-8 rounded-2xl'
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form 
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
-          <label className='flex flex-col '>
-              <span className='text-white font-medium mb-4'>
-                 Your name :
-              </span>
-              <input
-                type='text'
-                name='name'
-                value={form.name}
-                onChange={handleChange}
-                placeholder="what's your name ?"
-                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium  '
-              />
-          </label>
+         <div className="flex flex-col place-items-start mt-5">
+            <div className="flex  gap-2 items-center justify-center my-2">
+              <div className="bg-black-200  p-3 rounded-full">
+                <Mail className="text-white size-6" />
+              </div>
+              <span className="text-white font-semibold">raefkacem20@gmail.com</span>
+            </div >
 
-          <label className='flex flex-col '>
-              <span className='text-white font-medium mb-4'>
-                 Your Message :
-              </span>
-              <input
-                type='email'
-                name='email'
-                value={form.email}
-                onChange={handleChange}
-                placeholder="what's your email ?"
-                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium  '
-              />
-          </label>
+            <div className="flex  gap-2 items-center justify-center my-2">
+                <div className="bg-black-200  p-3 rounded-full">
+                <Linkedin  className="text-white size-6" />
+              </div>
+              <a href="https://www.linkedin.com/in/kacem-raef-366895284" className="text-white font-semibold">linkedin.com/in/kacem-raef-366895284</a>
+            </div>
 
-          <label className='flex flex-col '>
-              <span className='text-white font-medium mb-4'>
-                 Your Message :
-              </span>
-              <textarea
-                rows="7"
-                name='message'
-                value={form.message}
-                onChange={handleChange}
-                placeholder="what do you want to say ?"
-                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium  '
-              />
-          </label>
-
-          <button
-            type='submit'
-            className='bg-green-400 py-3 px-8 outline-none w-fit text-primary font-bold shadow-md shadow-primary rounded-lg'
-          >
-            {loading ? 'Sending ...' : 'Send'}
-          </button>
-        </form>
+            <div className="flex  gap-2 items-center justify-center my-2">
+                <div className="bg-black-200  p-3 rounded-full">
+                <Github   className="text-white size-6" />
+              </div>
+              <a href="https://github.com/raefka" className="text-white font-semibold">github.com/raefka</a>
+            </div>
+         </div>
       </motion.div>
 
       <motion.div
-         variants={slideIn('right',"tween" ,0.2,1)}
-         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
       </motion.div>
-
     </div>
-  )
-}
+  );
+};
 
-export default SectionWrapper(Contact , "contact") 
+export default SectionWrapper(Contact, "contact");

@@ -54,6 +54,15 @@ const About = () => {
         real-world problems. Let's work together to bring your ideas to life!
       </motion.p>
 
+      <a href="/RaefCV.pdf" download>
+        <button
+          type="button"
+          className="bg-tertiary py-3 px-8 rounded-[10px] text-white font-bold mt-2 hover:bg-tertiary/50"
+        >
+          Download CV
+        </button>
+      </a>
+
       <div className='mt-20 flex flex-wrap gap-10 '>
          {services.map((service , index) =>(
           <ServiceCard key={service.title} index={index} {...service} />

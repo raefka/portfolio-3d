@@ -11,10 +11,7 @@ import {
     mongodb,
     git,
     Aftercodelogo,
-    carrent,
-    jobit,
     tripguide,
-    threejs,
     anihub,
     animatch,
     takwirti
@@ -84,10 +81,6 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
@@ -97,7 +90,7 @@ import {
   
   const experiences = [
     {
-      title: "Next.js Developer",
+      title: "Next.js Developer internship",
       company_name: "Aftercode",
       icon: Aftercodelogo,
       iconBg: "#383E56",
@@ -108,7 +101,7 @@ import {
         "Enhancing the user experience with smooth animations using Framer Motion",
       ],
     }, {
-      title: "Fullstack Developer",
+      title: "Fullstack Developer internship",
       company_name: "Aftercode",
       icon: Aftercodelogo,
       iconBg: "#383E56",
@@ -166,29 +159,7 @@ import {
       ],
       image: takwirti,
       source_code_link: "https://github.com/Zouaoui-Montassar/Takwirti",
-    },
-    {
-      name: "Travel page",
-      description:
-        "Web application that enables users to search for places that you can visit , and enjoy the breathtaking sights.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "TypeScript",
-          color: "green-text-gradient",
-        },
-        {
-          name: "Tailwind css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/raefka/travel-app",
-    },
-    {
+    },{
       name: "Event App",
       description:
         "A comprehensive event booking platform that allows users to book events , create  and enjoy learning  for popular courses.",
